@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top-text {
+    color: red;
+}
+
+.side-bar {
+    background-color: #1d3d4e;
+    width: 300px;
+}

@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('../image/breno-machado-in9-n0JwgZ0-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* PENGATURAN HEADER */
+
+header, nav, section, footer {
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header  {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding: 20px 70px;
+    height: 110px;
+}
+
+.social-media {
+    height: 70px;
+    width: 500px;
+}
+
+.header-kiri {
+    background-image: url('../image/Puskesmas.svg');
+    background-size: cover;
+    background-position-y: center;
+    /* border: 1px solid black; */
+    height: 70px;
+    width: 250px;
+}
+
+.header-kiri a img {
+    width: 350px;
+    height: 75px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-kanan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    width: 150px;
+    gap: 3px;
+}
+
+/* PENGATURAN LOGO  */
+
+.container-lg-email, .container-lg-fb, .container-lg-ig, .container-lg-yt {
+    border: 2px dashed #00bfff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 5px 8px;
+    height: 45px;
+    width: 45px;
+    transition: 0.2s ease-in;
+}
+
+.logo-email, .logo-facebook, .logo-youtube, .logo-instagram {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+.text-email {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.email  {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 250px;
+}
+
+.logo-email {
+    background-image: url('../image/logo\ email.png');
+}
+
+.logo-facebook {
+    background-image: url('../image/facebook.png');
+}
+
+.logo-instagram {
+    background-image: url('../image/instagram.png');
+}
+
+.logo-youtube {
+    background-image: url('../image/youtube.png');
+}
+
+/* PENGATURAN HOVER LOGO */
+
+.container-lg-fb:hover, .container-lg-ig:hover, .container-lg-yt:hover {
+    border: 2px solid #00bfff;
+    background-color: #00bfff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 5px 8px;
+    height: 45px;
+    width: 45px;
+    transform: scale(1.15);
+}
+
+.logo-facebook:hover, .logo-instagram:hover {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+.logo-youtube:hover {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+.container-lg-fb:hover .logo-facebook {
+    background-image: url('../image/facebook-hover.png');
+}
+
+.container-lg-ig:hover .logo-instagram {
+    background-image: url('../image/instagram-hover.png');
+}
+
+.container-lg-yt:hover .logo-youtube {
+    background-image: url('../image/youtube-hover.png');
+}
+
+/* PENGATURAN ACTIVE LOGO */
+
+.container-lg-fb:active, .container-lg-ig:active, .container-lg-yt:active {
+    border: 2px solid #00bfff;
+    background-color: #00bfff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 5px 8px;
+    height: 45px;
+    width: 45px;
+    transform: scale(1);
+}
+
+/* PENGATURAN  NAV-BAR */
+
+nav {
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    background-color: #00bfff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin-left: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+nav ul li div a {
+    text-decoration: none;
+    color: #1d3d4e;
+    font-weight: 400;
+}
+
+.login-btn {
+    text-decoration: none;
+    background-color: #56e2ff;
+    margin-right: 50px;
+    color: #1d3d4e;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+/* PENGATURAN SECTION */
+
+.carousel {
+    height: 500px;
+    background-image: url('../image/breno-machado-in9-n0JwgZ0-unsplash.jpg');
+    background-size: cover;
+}
+
+.penghubung {
+    background-color: white;
+    height: 30px;
+}
+.isi-layanan-kami {
+    background-color: white;
+}
+
+.header-layanan-kami {
+    background-color: #56e2ff;
+    color: #1d3d4e;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 7px;
+    width: 300px;
+    height: 50px;
+    margin-left: 37%;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #00a8e7;
+}
+
+.apa {
+    display: flex;
+    gap: 15px;
+    padding: 20px 70px;
+}
+
+.img-layanan-kami {
+    background-image: url('../image/breno-machado-in9-n0JwgZ0-unsplash.jpg');
+    background-size: cover;
+    border: 4px solid #00bfff;
+    width: 500px;
+    height: 600px;
+}
+
+.td-lainnya {
+    padding-left: 145px;
+    padding-top: 30px;
+}
+
+.text-layanan-kami {
+    font-size: 19px;
+    text-align: justify;
+    color: #1d3d4e;
+    width: 600px;
+}
+
+.icon-layanan-kami {
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+    padding: 10px 20px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.icon-layanan-kami div {
+    display: flex;
+    align-items: center;
+    border: 2px solid #00bfff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 80px;
+    height: 80px;
+    padding: 0px 8px;
+    transition: 0.2s;
+}
+
+.icon-layanan-kami div div {
+    background-color: #00bfff;
+    width: 60px;
+    height: 60px;
+    transform: scale(1);
+}
+
+.icon-layanan-kami a {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+}
+
+.text-logo-lab {
+    text-align: center;
+    color: #1d3d4e;
+    margin-top: 10px;
+    margin-left: -9px;
+}
+
+.text-logo {
+    text-align: center;
+    color: #1d3d4e;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.jam {
+    background-image: url('../image/24-jam.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.lab {
+    background-image: url('../image/lab-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.bersalin {
+    background-image: url('../image/bersalin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.k-vct {
+    background-image: url('../image/victa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.k-paru {
+    background-image: url('../image/paru.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.k-jiwa {
+    background-image: url('../image/jiwa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.td-lainnya a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.lyn-lainnya {
+    border: 1px solid #00bfff;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 50px;
+}
+
+.isi-lyn-lainnya {
+    background-color: #00bfff;
+    box-sizing: border-box;
+    color: aliceblue;
+    padding: 5% 10%;
+    width: 200px;
+    transition: 0.2s;
+}
+
+.logo-lyn-lainnya {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2%;
+    width: 50px;
+    transition: 0.2s;
+}
+
+.logo-lyn-lainnya-real {
+    background-image: url('../image/lainnya.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.td-lainnya a:hover .lyn-lainnya .isi-lyn-lainnya {
+    background-color: white;
+    box-sizing: border-box;
+    color: #00bfff;
+    padding: 5% 10%;
+    width: 200px;
+}
+
+.td-lainnya a:hover .lyn-lainnya .logo-lyn-lainnya {
+    background-color: #00bfff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2%;
+    width: 50px;
+}
+
+.td-lainnya a:hover .lyn-lainnya .logo-lyn-lainnya .logo-lyn-lainnya-real {
+    background-image: url('../image/lainnya-hover.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+/* PENGATURAN HOVER LAYANAN KAMI  */
+
+.icon-layanan-kami div:hover {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 191, 255);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 80px;
+    height: 80px;
+    padding: 0px 8px;
+    transform: scale(1.15);
+}
+
+.icon-layanan-kami div div:hover {
+    background-color: #00bfff;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-layanan-kami div .jam:hover {
+    transform: scale(1);
+}
+
+/* PENGATURAN SSESI 2 */
+.sesi1 {
+    background-color: white;
+}
+
+.sesi2 {
+    background-color: rgb(0, 191, 255, 0.2);
+    height: 700px;
+}
+
+.sesi3 {
+    background-color: #00a8e7;
+    height: 700px;
+}
+
+.sesi4 {
+    background-color: white;
+    height: 300px;
+}
+
+footer {
+    background-color: #1d3d4e;
+    height: 400px;
+}
